@@ -6,7 +6,7 @@ on:
 
 jobs:
   vitest:
-    name: Running Prettier
+    name: Running Prettier Check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,4 +14,4 @@ jobs:
         with:
           node-version: 'lts/jod'
       - run: npm ci
-      - run: npm run format
+      - run: npm run lint
