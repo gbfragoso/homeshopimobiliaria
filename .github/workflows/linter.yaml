@@ -1,4 +1,4 @@
-name: Automated tests
+name: Linting
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   vitest:
-    name: Running Vitest
+    name: Running Prettier
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,4 +14,4 @@ jobs:
         with:
           node-version: 'lts/jod'
       - run: npm ci
-      - run: npm test
+      - run: npm run format
