@@ -1,4 +1,4 @@
-name: Automated tests
+name: Checking
 
 on:
   pull_request:
@@ -14,4 +14,4 @@ jobs:
         with:
           node-version: 'lts/jod'
       - run: npm ci
-      - run: npm check
+      - run: npm run check
