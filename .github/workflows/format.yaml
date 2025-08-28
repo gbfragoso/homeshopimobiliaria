@@ -6,7 +6,7 @@ on:
 
 jobs:
   vitest:
-    name: Running Prittier
+    name: Running Prettier Write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
