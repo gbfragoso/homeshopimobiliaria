@@ -1,6 +1,7 @@
 <script lang="ts">
-	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import '@fortawesome/fontawesome-free/css/all.min.css';
+	import '../app.scss';
 
 	let { children } = $props();
 </script>

@@ -1,0 +1,24 @@
+@use 'bulma/sass' with (
+	$family-primary: '"Roboto", sans-serif',
+	$primary: #012444
+);
+@use 'bulma/sass/base';
+@use 'bulma/sass/elements';
+@use 'bulma/sass/form';
+@use 'bulma/sass/components';
+@use 'bulma/sass/grid';
+@use 'bulma/sass/helpers';
+@use 'bulma/sass/layout';
+@use 'bulma/sass/themes';
+
+#hero {
+	background:
+		linear-gradient(45deg, rgba(242, 123, 0, 0.5) 0%, rgba(1, 36, 68, 0.5) 100%),
+		url('/hero.jpeg') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+body {
+	background-color: #eee;
+}
